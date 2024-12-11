@@ -24,4 +24,10 @@ export const SITE_SETTINGS = {
     { title: "HypeScout Pte", link: "/" },
     { title: "Loan Management for Fintech ", link: "/" },
   ],
+  marqueeText: [
+    "Based in Dhaka, Bangladesh",
+    "Open for full-time remote roles",
+    "7+ years of experience",
+    "Pushing pixels remotely",
+  ],
 };

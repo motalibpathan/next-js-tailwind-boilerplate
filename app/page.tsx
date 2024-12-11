@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/molecules/AnimatedText/AnimatedText";
 import SubheaderText from "@/components/molecules/AnimatedText/SubheaderText";
 import LoaderAnimation from "@/components/molecules/LoadingScreen/LoaderAnimation";
+import MarqueeBar from "@/components/organisms/Landing/MarqueeBar";
 import ProjectLinks from "@/components/organisms/Landing/ProjectLinks";
 import { SITE_SETTINGS } from "@/lib/data";
 
@@ -31,6 +32,9 @@ export default function Home() {
             />
           </div>
           <ProjectLinks />
+          <div className="absolute w-full bottom-0 left-0">
+            <MarqueeBar />
+          </div>
         </div>
       </main>
     </div>
