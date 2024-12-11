@@ -21,7 +21,7 @@ const Loader = () => {
     },
     exit: {
       height: "0%",
-      transition: { duration: 0.3, ease: "easeInOut" },
+      transition: { duration: 0.5, ease: "easeInOut" },
     },
   };
 
@@ -47,7 +47,7 @@ const Loader = () => {
       opacity: 1,
       filter: "blur(0px)",
       transform: "translateY(0) rotateX(0)",
-      transition: { delay: 0.2, duration: 0.3, ease: "easeOut" },
+      transition: { delay: 0.5, duration: 0.3, ease: "easeOut" },
     },
     exit: {
       opacity: 1,
@@ -121,14 +121,17 @@ const Loader = () => {
               animate="animate"
               exit="exit"
             >
-              Assalamualikum 🙏🏽
+              Assalamualaikum🫡
             </motion.div>
           </motion.div>
           <motion.div
             style={{
               fontSize: "1.5em",
-              color: "#fff",
-              display: "none",
+              color: "#333",
+              position: "absolute",
+              bottom: "5%",
+              left: "50%",
+              transform: "translateX(-50%)",
             }}
             variants={bottomTextVariants}
             initial="initial"
