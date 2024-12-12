@@ -24,7 +24,7 @@ const ProjectLinks = () => {
             />
 
             <span className="overflow-hidden">
-              <SolarArrowRightLinear className="lg:-translate-x-5 group-hover:translate-x-0 duration-500" />
+              <SolarArrowRightLinear className="lg:-translate-x-6 group-hover:translate-x-0 duration-500" />
             </span>
           </a>
         ))}

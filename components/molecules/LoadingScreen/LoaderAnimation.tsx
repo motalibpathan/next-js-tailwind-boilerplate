@@ -39,7 +39,7 @@ const Loader = () => {
 
   const mainTextVariants = {
     initial: {
-      opacity: 1,
+      opacity: 0,
       filter: "blur(10px)",
       transform: "translateY(-100%) rotateX(-2deg)",
     },
@@ -47,13 +47,13 @@ const Loader = () => {
       opacity: 1,
       filter: "blur(0px)",
       transform: "translateY(0) rotateX(0)",
-      transition: { delay: 0.5, duration: 0.3, ease: "easeOut" },
+      transition: { delay: 0.3, duration: 0.4, ease: "easeOut" },
     },
     exit: {
       opacity: 1,
       filter: "blur(10px)",
       transform: "translateY(100%) rotateX(2deg)",
-      transition: { duration: 0.3, ease: "easeInOut" },
+      transition: { duration: 0.4, ease: "easeInOut" },
     },
   };
 
@@ -108,21 +108,24 @@ const Loader = () => {
             animate="animate"
             exit="exit"
           >
-            <motion.div
+            <div
+              className="text-white md:text-8xl text-[clamp(32px,2vw,84px)] "
               style={{
-                color: "#fff",
-                letterSpacing: "0.01em",
-                fontFamily: "Interdisplay, sans-serif",
-                fontSize: "4em",
                 transformStyle: "preserve-3d",
               }}
-              variants={mainTextVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
             >
-              Assalamualaikum🫡
-            </motion.div>
+              <motion.div
+                style={{
+                  transformStyle: "preserve-3d",
+                }}
+                variants={mainTextVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                Assalamualaikum🫡
+              </motion.div>
+            </div>
           </motion.div>
           <motion.div
             style={{
